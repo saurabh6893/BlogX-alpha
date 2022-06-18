@@ -21,8 +21,8 @@ function Home({ isAuth }) {
     <div>
       {postList.map((post) => {
         return (
-          <div className='page'>
-            <div className='aPost border-8 rounded-lg sm:w-[80vw] md:w-[70vw] lg:w-[50vw] mt-7 px-10 py-5'>
+          <div className='page px-5 py-2'>
+            <div className='aPost border-8 rounded-lg sm:w-[90vw] md:max-w-[70vw] lg:max-w-[50vw] mt-7'>
               <div className='top flex justify-between items-center'>
                 <h1 className='text-5xl m-4 pb-4 border-b-4 capitalize'>
                   {post.title}

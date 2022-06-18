@@ -30,8 +30,8 @@ function CreatePost({ isAuth }) {
   }, [])
 
   return (
-    <div className='bg-white p-8 flex justify-center items-center md:max-w-[100%]'>
-      <div className='bg-gradient-to-b from-gray-700 via-gray-900 to-black flex-col w-2/4 h-full text-5xl text-center p-10 text-white rounded-3xl sm:w-[90vw] md:w-[80vw] lg:w-[50vw]'>
+    <div className='bg-white flex justify-center items-center md:max-w-[100%]'>
+      <div className='bg-gradient-to-b from-gray-700 via-gray-900 to-black flex-col w-2/4 h-full text-2xl sm:text-3xl lg:text-5xl text-center justify-center mt-10 text-white rounded-3xl py-5 min-px-2 sm:px-2 md:px-3 lg:px-4 min-w-[88vw] sm:w-[90vw] md:w-[80vw] lg:w-[50vw]'>
         Create post
         <label className='block mx-5 mt-10 mb-4 text-4xl text-left'>
           Title
@@ -39,7 +39,7 @@ function CreatePost({ isAuth }) {
         <input
           placeholder='enter title for post'
           type='text'
-          className='text-black block w-[100%] p-2 text-2xl'
+          className='text-black block w-[90%] relative left-4 p-2 text-2xl'
           onChange={(event) => {
             setTitle(event.target.value)
           }}
@@ -49,7 +49,7 @@ function CreatePost({ isAuth }) {
         </label>
         <textarea
           name='posttext'
-          className='text-black block w-[100%] p-2 text-2xl'
+          className='text-black block w-[90%] p-2 text-2xl relative left-4'
           rows='5'
           onChange={(event) => {
             setPostText(event.target.value)
